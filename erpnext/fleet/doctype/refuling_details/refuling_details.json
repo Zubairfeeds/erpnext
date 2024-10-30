@@ -1,0 +1,80 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-11-27 17:07:32.941897",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "feuling_date",
+  "fuel_qty",
+  "fuel_rate",
+  "fuel_price",
+  "invoice_ref",
+  "attach",
+  "purpose"
+ ],
+ "fields": [
+  {
+   "columns": 1,
+   "fieldname": "fuel_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Fuel Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "fuel_price",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Fuel Amount"
+  },
+  {
+   "columns": 2,
+   "fieldname": "invoice_ref",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Invoice Ref"
+  },
+  {
+   "fieldname": "attach",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "Attach"
+  },
+  {
+   "fieldname": "fuel_rate",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Fuel Rate"
+  },
+  {
+   "columns": 2,
+   "fieldname": "feuling_date",
+   "fieldtype": "Date",
+   "label": "Fueling Date",
+   "reqd": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "purpose",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Purpose",
+   "options": "\nHome to Office\nExtra Visit"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-03-21 11:13:38.239534",
+ "modified_by": "Administrator",
+ "module": "Fleet",
+ "name": "Refuling Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,48 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2023-11-08 15:44:11.033254",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date",
+   "mandatory": 0,
+   "wildcard_filter": 1
+  }
+ ],
+ "idx": 0,
+ "is_standard": "Yes",
+ "json": "{\"filters\":[[\"Sales Invoice\",\"posting_date\",\"=\",\"2023-11-21\"]],\"fields\":[[\"name\",\"Sales Invoice\"],[\"customer_location\",\"Sales Invoice\"],[\"site\",\"Sales Invoice\"],[\"cost_center\",\"Sales Invoice\"],[\"customer_name\",\"Sales Invoice\"],[\"item_code\",\"Sales Invoice Item\"],[\"item_name\",\"Sales Invoice Item\"],[\"uom\",\"Sales Invoice Item\"],[\"qty\",\"Sales Invoice Item\"],[\"price_list_amount\",\"Sales Invoice Item\"],[\"gross_discount_amount\",\"Sales Invoice Item\"],[\"amount\",\"Sales Invoice Item\"],[\"total_taxes_and_charges\",\"Sales Invoice\"]],\"order_by\":\"`tabSales Invoice`.`modified` asc\",\"add_totals_row\":true,\"page_length\":100,\"column_widths\":{\"name\":163,\"customer_location\":95,\"site\":103,\"cost_center\":136,\"customer_name\":259,\"Sales Invoice Item:item_code\":149,\"Sales Invoice Item:item_name\":166,\"Sales Invoice Item:uom\":54,\"Sales Invoice Item:qty\":96,\"Sales Invoice Item:price_list_amount\":129,\"Sales Invoice Item:gross_discount_amount\":129,\"Sales Invoice Item:amount\":134,\"total_taxes_and_charges\":120},\"group_by\":null}",
+ "letter_head": "Zubair Feeds",
+ "modified": "2023-11-23 12:02:48.441562",
+ "modified_by": "Administrator",
+ "module": "Accounts",
+ "name": "Daily Sales Summary Report",
+ "owner": "waleed.perwaiz@zubairfeeds.com",
+ "prepared_report": 0,
+ "ref_doctype": "Sales Invoice",
+ "report_name": "Daily Sales Summary Report",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "Accounts User"
+  },
+  {
+   "role": "Accounts Manager"
+  },
+  {
+   "role": "Employee Self Service"
+  },
+  {
+   "role": "Accountant HO"
+  },
+  {
+   "role": "Senior Assistant Manager Account HO"
+  }
+ ]
+}

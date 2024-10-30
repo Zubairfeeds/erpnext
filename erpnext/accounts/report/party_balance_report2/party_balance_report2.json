@@ -1,0 +1,49 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2024-02-01 12:00:56.153851",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From Date",
+   "mandatory": 0,
+   "wildcard_filter": 0
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date",
+   "mandatory": 0,
+   "wildcard_filter": 0
+  }
+ ],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letter_head": "ZFPL",
+ "modified": "2024-02-01 12:08:58.806259",
+ "modified_by": "Administrator",
+ "module": "Accounts",
+ "name": "Party Balance Report2",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "select * from `tabGL Entry` where date(creation) between % (from_date)s and %(to_date)s;",
+ "ref_doctype": "GL Entry",
+ "report_name": "Party Balance Report2",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "Accounts User"
+  },
+  {
+   "role": "Accounts Manager"
+  },
+  {
+   "role": "Auditor"
+  }
+ ]
+}

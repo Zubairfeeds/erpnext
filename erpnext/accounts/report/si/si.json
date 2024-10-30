@@ -1,0 +1,63 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2024-02-01 12:11:54.433968",
+ "disable_prepared_report": 0,
+ "disabled": 1,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "mandatory": 0,
+   "options": "Customer",
+   "wildcard_filter": 0
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From Date",
+   "mandatory": 0,
+   "wildcard_filter": 0
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date",
+   "mandatory": 0,
+   "wildcard_filter": 0
+  }
+ ],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letter_head": "ZFPL",
+ "modified": "2024-02-27 17:46:27.748226",
+ "modified_by": "Administrator",
+ "module": "Accounts",
+ "name": "SI",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "\r\n SELECT\r\n    `tabSales Invoice`.posting_date AS \"Posting Date\",\r\n    `tabSales Invoice`.customer AS \"Customer\",\r\n    `tabSales Invoice Item`.item_code AS \"Item Code\",\r\n    `tabSales Invoice Item`.qty AS \"Quantity\"\r\nFROM\r\n    `tabSales Invoice`\r\nJOIN\r\n    `tabSales Invoice Item` ON `tabSales Invoice`.name = `tabSales Invoice Item`.parent\r\nWHERE\r\n    `tabSales Invoice`.docstatus = 1\r\n",
+ "ref_doctype": "GL Entry",
+ "report_name": "SI",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "Accounts User"
+  },
+  {
+   "role": "Accounts Manager"
+  },
+  {
+   "role": "Employee Self Service"
+  },
+  {
+   "role": "Accountant HO"
+  },
+  {
+   "role": "Senior Assistant Manager Account HO"
+  }
+ ]
+}

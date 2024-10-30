@@ -1,0 +1,60 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"hBpuYnjBgM\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Fleet Management</span>\",\"col\":12}},{\"id\":\"hcUDoIjGSj\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Vehicle\",\"col\":3}},{\"id\":\"CzcgKIkvQs\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Vehicle Log\",\"col\":3}},{\"id\":\"UqYG1dsJrF\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Vehicle Expenses\",\"col\":3}}]",
+ "creation": "2023-12-07 12:46:08.343526",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "Fleet Management",
+ "links": [],
+ "modified": "2024-07-15 14:00:32.296620",
+ "modified_by": "Administrator",
+ "module": "Fleet",
+ "name": "Fleet Management",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [
+  {
+   "role": "Fleet Manager"
+  },
+  {
+   "role": "HR Manager"
+  },
+  {
+   "role": "System Manager"
+  }
+ ],
+ "sequence_id": 5.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Vehicle",
+   "link_to": "Vehicle",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Vehicle Log",
+   "link_to": "Vehicle Log",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Vehicle Expenses",
+   "link_to": "Vehicle Expenses",
+   "type": "Report"
+  }
+ ],
+ "title": "Fleet Management"
+}
